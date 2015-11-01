@@ -10,7 +10,7 @@ Ext.define('chasing-sencha-touch.view.NotesList', {
             '<div class="note-list-empty-text">No notes found</div>',
             '</pre>'
         ].join(''),
-        itemTpl:[
+        itemTpl: [
             '<pre>',
             '<div class="list-item-title">{title}</div>',
             '</pre>'

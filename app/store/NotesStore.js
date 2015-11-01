@@ -4,10 +4,10 @@ Ext.define('chasing-sencha-touch.store.NotesStore', {
         model: 'chasing-sencha-touch.model.NotesModel',
         proxy: {
             type: 'ajax',
-            url: './notes.json',
+            url: 'notes.json',
             render: {
-                type: 'json'
-                //roots:''
+                type: 'json',
+                roots:'notes'
             }
         },
         autoLoad: true

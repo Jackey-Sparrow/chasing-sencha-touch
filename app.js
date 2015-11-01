@@ -16,9 +16,10 @@ Ext.application({
     requires: [
         'Ext.MessageBox'
     ],
+    controllers:['Notes'],
 
     views: [
-        'Main'
+        'NotesListContainer'
     ],
 
     icon: {
@@ -44,7 +45,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('chasing-sencha-touch.view.Main'));
+        Ext.Viewport.add(Ext.create('chasing-sencha-touch.view.NotesListContainer'));
     },
 
     onUpdated: function() {

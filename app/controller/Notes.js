@@ -2,16 +2,16 @@ Ext.define('chasing-sencha-touch.controller.Notes', {
     extend: 'Ext.app.Controller',
     config: {
         refs: {
-            newNoteBtn: '#new-note-btn'
+            noteContainer: 'notecontainer'
         },
         control: {
-            newNoteBtn: {
-                tap: 'onNewNote'
+            noteContainer:{
+                newNoteCmd:'onNewNote'
             }
         }
     },
     onNewNote: function () {
-        console.log('new');
+        console.log('newNoteCmd');
     },
     launch: function () {
         //this.callParent();

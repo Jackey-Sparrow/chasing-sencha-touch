@@ -38,6 +38,7 @@ Ext.define('chasing-sencha-touch.view.NoteContainer', {
     },
     onNewNoteBtnTap: function () {
         console.log('new');
+        this.fireEvent('newNoteCmd', this);
     },
     onNoteListDisclose: function () {
         console.log('close');

@@ -40,6 +40,31 @@ Ext.define('chasing-sencha-touch.view.NoteEditor', {
             iconMask: true,
             scope: this
         };
+
+        var bottomToolBar = {
+            xtype: 'toolbar',
+            docked: 'bottom',
+            items: [deleteButton]
+        };
+
+        var noteEditorTitle = {
+            xtype: 'textfield',
+            name: 'title',
+            label: 'Title',
+            required: true
+        };
+
+        var noteEditorNarrative = {
+            xtype: 'textareafield',
+            name: 'narrative',
+            label: 'Narrative'
+        };
+
+        this.add([
+            topToolBar,
+            {xtype: 'fielsset', items: [noteEditorTitle, noteEditorNarrative]},
+            bottomToolBar
+        ]);
     },
     onBackHomeTap: function () {
     },
